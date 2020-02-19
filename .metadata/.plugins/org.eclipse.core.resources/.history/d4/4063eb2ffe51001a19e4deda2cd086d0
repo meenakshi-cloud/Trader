@@ -1,0 +1,31 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\katpa\\OneDrive\\Desktop\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("www.autotrader.com");
+		driver.findElement(By.cssSelector("div['class=col-xs-12']")).click();
+		driver.findElement(By.cssSelector("input['class=form-control']")).sendKeys("30040");
+		driver.findElement(By.cssSelector("div.input-label")).get(2);
+		//driver.findElement(By.cssSelector(cssSelector)).get(0);
+		//driver.findElement(arg0)
+		//System.out.println(driver.getTitle());
+		//System.out.println(driver.getCurrentUrl());
+		driver.quit();
+		
+
+	}
+
+}
+
+
+
+

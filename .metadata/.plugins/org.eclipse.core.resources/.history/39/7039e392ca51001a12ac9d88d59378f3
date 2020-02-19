@@ -1,0 +1,27 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\katpa\\OneDrive\\Desktop\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("www.autotrader.com");
+		driver.findElement(By.cssSelector(div.col-xs-12 text-bold padding-horizontal-0 padding-horizontal-sm-2 text-size-5 text-size-sm-10)).click();
+		//System.out.println(driver.getTitle());
+		//System.out.println(driver.getCurrentUrl());
+		driver.quit();
+		
+
+	}
+
+}
+
+
+
+
